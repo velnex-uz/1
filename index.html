@@ -394,6 +394,53 @@ body.smv header.hero{display:none!important}
 
 /* Yuqori panel sahifa bilan birga ketadi: pastga tushganda yo'qoladi (qotib turmaydi) */
 header.hero .wrap.hbar{position:absolute!important;top:max(10px,env(safe-area-inset-top,0px))}
+
+/* ===== Premium polish (investor demo) ===== */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;overflow-x:hidden}
+::selection{background:color-mix(in srgb,var(--ac) 45%,transparent);color:inherit}
+h1,h2,h3{text-wrap:balance;letter-spacing:-.015em}
+p{text-wrap:pretty}
+.hero h1{line-height:1.08;letter-spacing:-.02em;text-shadow:0 2px 24px rgba(0,0,0,.35)}
+.hero .hin p{max-width:520px;color:rgba(255,255,255,.9)}
+.sec{padding:56px 0}
+.sec h2.t{letter-spacing:-.02em}
+.eb{letter-spacing:.2em;text-transform:uppercase;font-size:11.5px;font-weight:700;color:var(--at)}
+/* buttons */
+.btn{transition:transform .2s ease,box-shadow .25s ease,background .25s ease,border-color .25s ease;-webkit-tap-highlight-color:transparent}
+.btn.gold{background:linear-gradient(135deg,#e6c68c 0%,#c8a165 52%,#a8803f 100%);box-shadow:0 10px 24px -10px rgba(200,161,101,.75),inset 0 1px 0 rgba(255,255,255,.4);font-weight:700;letter-spacing:.01em}
+.btn.gold:hover{transform:translateY(-2px);box-shadow:0 16px 30px -12px rgba(200,161,101,.9),inset 0 1px 0 rgba(255,255,255,.5)}
+.btn.line{backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.55)}
+.btn.line:hover,.btn.out:hover{transform:translateY(-2px);border-color:var(--ac)}
+.btn:active{transform:translateY(0) scale(.98)}
+/* header bar */
+header.hero .wrap.hbar{background:rgba(18,14,10,.55);backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);border:1px solid rgba(255,255,255,.14);box-shadow:0 18px 40px -22px rgba(0,0,0,.8)}
+.hbar nav a{transition:color .2s}
+.hbar nav a:hover{color:var(--ac)}
+/* cards */
+.hs,.lc,.jb,.sv,details{box-shadow:0 14px 34px -24px rgba(40,28,10,.35)}
+details{transition:border-color .25s,box-shadow .25s}
+details:hover{border-color:color-mix(in srgb,var(--ac) 55%,var(--ln))}
+details[open]{border-color:var(--ac);box-shadow:0 18px 40px -26px rgba(200,161,101,.6)}
+.svc,.pf img,.why>img{transition:transform .5s cubic-bezier(.2,.7,.2,1),box-shadow .4s}
+.svc:hover{transform:translateY(-4px);box-shadow:0 22px 40px -22px rgba(0,0,0,.6)}
+.bdg li{backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.14)}
+/* banner + footer */
+.ban{box-shadow:0 26px 50px -28px rgba(0,0,0,.7);border:1px solid rgba(200,161,101,.35)}
+footer{padding:36px 0 44px;color:var(--mut);font-size:13px;text-align:center;border-top:1px solid var(--ln)}
+footer details{max-width:520px;margin-left:auto;margin-right:auto;text-align:left}
+/* inputs */
+input[type=text],input[type=number],input[type=tel]{transition:border-color .2s,box-shadow .2s}
+input:focus{border-color:var(--ac);box-shadow:0 0 0 4px color-mix(in srgb,var(--ac) 22%,transparent);outline:none}
+/* mobile */
+@media(max-width:960px){
+ .sec{padding:40px 0}
+ .hero h1{font-size:32px}
+ .hb{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+ .hb .btn{justify-content:center;min-width:240px}
+ .btn,.btn.out{min-height:44px}
+}
+@media(prefers-reduced-motion:reduce){.btn,.svc,details{transition:none}.btn:hover,.svc:hover{transform:none}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "VELNEX — Remont narxi kalkulyatori", "url": "https://velnex.uz/", "publisher": {"@type": "Organization", "name": "VELNEX", "url": "https://velnex.uz/"}, "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "inLanguage": "uz", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "UZS"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Uyning hozirgi holati nimani anglatadi?", "acceptedAnswer": {"@type": "Answer", "text": "Qora suvoq (korobka) — devor suvalmagan, elektr va suv quvuri yoʻq. Suvoq bor — devor suvalgan, shpaklyovka kerak. Tayyor devor — faqat boʻyoq, pol va shunga oʻxshash pardoz. Yaxshi holat — kosmetik yangilash. Eski remont — eskisi buzilib, hammasi yangidan qilinadi. Holatni tanlasangiz, kerakli ishlar avtomatik belgilanadi."}}, {"@type": "Question", "name": "Hisob qanchalik aniq?", "acceptedAnswer": {"@type": "Answer", "text": "Bu taxminiy hisob: ishlar hajmi, material narxi va usta haqining namunaviy qiymatlari asosida chiqadi. Aniq narx ustaning koʻrigidan keyin maʼlum boʻladi."}}, {"@type": "Question", "name": "Narxga nimalar kiradi?", "acceptedAnswer": {"@type": "Answer", "text": "Tanlangan ishlar uchun materiallar, usta haqi, 15% zaxira va (tanlansa) mebel. Tanlanmagan ishlar, masalan eshik, deraza va maishiy texnika, hisobga kirmaydi."}}, {"@type": "Question", "name": "Ustamning narxini qanday kiritaman?", "acceptedAnswer": {"@type": "Answer", "text": "“Usta narxi” boʻlimida ustaning ish haqini kiriting. Materiallar narxi oʻzgarmaydi, natija shu narxlar bilan qayta hisoblanadi."}}, {"@type": "Question", "name": "Maʼlumotlarim saqlanadimi?", "acceptedAnswer": {"@type": "Answer", "text": "Saqlangan hisoblar faqat sizning brauzeringizda turadi. Telefon raqamingiz bu saytda saqlanmaydi: u faqat oʻzingiz tanlagan messenjer orqali ustaga yuboriladi."}}]}</script>
